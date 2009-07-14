@@ -14,7 +14,6 @@ from PMS.Shortcuts import *
 import lxml, re, sys, locale
 
 # Plugin parameters
-PLUGIN_TITLE						= "Têtes à Claques.TV"			# The plugin Title
 PLUGIN_PREFIX   					= "/video/TAC.TV"				# The plugin's contextual path within Plex
 
 # Plugin Icons
@@ -38,7 +37,7 @@ def Start():
 	sys.setdefaultencoding("utf-8")
 	
 	# Register our plugins request handler
-	Plugin.AddPrefixHandler(PLUGIN_PREFIX, MainMenu, PLUGIN_TITLE.decode('utf-8'), PLUGIN_ICON_DEFAULT, PLUGIN_ARTWORK)
+	Plugin.AddPrefixHandler(PLUGIN_PREFIX, MainMenu, L("PLUGIN_TITLE"), PLUGIN_ICON_DEFAULT, PLUGIN_ARTWORK)
 	
 	# Add in the views our plugin will support
 	Plugin.AddViewGroup("Menu", viewMode="InfoList", mediaType="items")
@@ -47,7 +46,7 @@ def Start():
 	
 	# Set up our plugin's container
 	
-	MediaContainer.title1 = PLUGIN_TITLE.decode('utf-8')
+	MediaContainer.title1 = L("PLUGIN_TITLE")
 	MediaContainer.viewGroup = "Menu"
 	MediaContainer.art = R(PLUGIN_ARTWORK)
 	

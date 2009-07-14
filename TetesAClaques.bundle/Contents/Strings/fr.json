@@ -1,4 +1,7 @@
 {	
+	//Plugin Title : for the moment the title is taken in the en string file
+	"PLUGIN_TITLE"				: "Têtes à Claques.TV",
+	
 	// Main menu
 	"FRENCH_MENU"				: "Épisodes en français",
 	"FRENCH_MENU_SUMMARY" 		: "Tous les épisodes de TêtesAClaques.TV en français enfin en quebecois :).\n\nIls sont regroupés par vote, date ou par séries.", 

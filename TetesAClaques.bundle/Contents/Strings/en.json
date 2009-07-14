@@ -1,4 +1,7 @@
 {	
+	//Plugin Title : for the moment the title is taken in the en string file
+	"PLUGIN_TITLE"				: "Têtes à Claques.TV",
+	
 	// Main menu
 	"FRENCH_MENU"				: "Episodes in French",
 	"FRENCH_MENU_SUMMARY" 		: "All the episodes from TAC.TV in French.. Uh in Quebeck French in fact :)\n\nVideos are sorted by vote, class and series.", 
